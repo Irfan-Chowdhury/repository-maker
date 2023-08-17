@@ -3,6 +3,8 @@
 namespace Irfan\RepositoryMaker;
 
 use Illuminate\Support\ServiceProvider;
+use Irfan\RepositoryMaker\Console\Commands\MakeBaseContract;
+use Irfan\RepositoryMaker\Console\Commands\MakeBaseRepository;
 use Irfan\RepositoryMaker\Console\Commands\MakeContract;
 use Irfan\RepositoryMaker\Console\Commands\MakeExtendedContract;
 use Irfan\RepositoryMaker\Console\Commands\MakeExtendedRepository;
@@ -21,11 +23,13 @@ class RepositoryServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                MakeService::class,
                 MakeContract::class,
+                MakeBaseContract::class,
                 MakeExtendedContract::class,
                 MakeRepository::class,
+                MakeBaseRepository::class,
                 MakeExtendedRepository::class,
+                MakeService::class,
             ]);
         }
     }
