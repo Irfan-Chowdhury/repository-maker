@@ -8,7 +8,7 @@
         "laravel-repository-design-pattern"
     ],
     "type": "library",
-    "homepage": "https://github.com/Irfan-Chowdhury/unique-slug-generate",
+    "homepage": "https://github.com/Irfan-Chowdhury/repository-maker",
     "license": "MIT",
     "autoload": {
         "psr-4": {
