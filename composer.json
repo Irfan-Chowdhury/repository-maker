@@ -1,7 +1,14 @@
 {
-    "name": "irfan/repository-maker",
-    "description": "This package will create your necessary file for repository design pattern environment.",
+    "name": "irfan-chowdhury/repository-maker",
+    "description": "This package will create your necessary files for repository design pattern environment.",
+    "keywords": [
+        "repository",
+        "repository-design-pattern",
+        "laravel-repository",
+        "laravel-repository-design-pattern"
+    ],
     "type": "library",
+    "homepage": "https://github.com/Irfan-Chowdhury/unique-slug-generate",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -11,12 +18,14 @@
     "authors": [
         {
             "name": "Irfan Chowdhury",
-            "email": "irfanchowdhury80@gmail.com"
+            "email": "irfanchowdhury80@gmail.com",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.4"
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.0"
     },
     "extra": {
         "laravel": {
