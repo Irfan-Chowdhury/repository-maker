@@ -1,5 +1,5 @@
 {
-    "name": "irfan/repository-maker",
+    "name": "irfan/repository-generator",
     "description": "This package will create your necessary file for repository design pattern environment.",
     "type": "library",
     "license": "MIT",
