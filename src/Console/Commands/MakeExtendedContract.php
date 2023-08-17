@@ -4,6 +4,7 @@ namespace Irfan\RepositoryMaker\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
+use Irfan\RepositoryMaker\Facades\Utility;
 
 class MakeExtendedContract extends Command
 {
@@ -16,10 +17,7 @@ class MakeExtendedContract extends Command
      */
     public function handle()
     {
-        $directoryPath = app_path('Contracts');
-        if (!File::exists($directoryPath)) {
-            File::makeDirectory($directoryPath, 0755, true); // The third parameter creates nested directories if needed
-        }
+        Utility::directoryManage($directory='Contracts');
 
         $name = $this->argument('name');
         $contractContent = $this->formatOfContent($name);

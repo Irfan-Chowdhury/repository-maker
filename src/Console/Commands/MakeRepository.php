@@ -4,6 +4,7 @@ namespace Irfan\RepositoryMaker\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
+use Irfan\RepositoryMaker\Facades\Utility;
 
 class MakeRepository extends Command
 {
@@ -23,11 +24,7 @@ class MakeRepository extends Command
 
     public function handle()
     {
-        $directoryPath = app_path('Repositories'); // Replace with the actual path
-        if (!File::exists($directoryPath)) {
-            File::makeDirectory($directoryPath, 0755, true); // The third parameter creates nested directories if needed
-            // You can also specify the desired permissions (0755 in this case)
-        }
+        Utility::directoryManage($directory='Repositories');
 
         $name = $this->argument('name');
         $baseName = str_replace('Repository', '', $name);
