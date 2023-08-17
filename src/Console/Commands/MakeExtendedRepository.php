@@ -3,7 +3,6 @@
 namespace Irfan\RepositoryMaker\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
 use Irfan\RepositoryMaker\Facades\Utility;
 
 class MakeExtendedRepository extends Command
@@ -24,7 +23,7 @@ class MakeExtendedRepository extends Command
 
     public function handle()
     {
-        Utility::directoryManage($directory='Repositories');
+        Utility::directoryManage($directory = 'Repositories');
 
         $name = $this->argument('name');
         $baseName = str_replace('Repository', '', $name);
@@ -38,6 +37,7 @@ class MakeExtendedRepository extends Command
 
         if (file_exists($filePath)) {
             $this->error("Repository {$RepositoryName} already exists!");
+
             return;
         }
 
@@ -49,8 +49,8 @@ class MakeExtendedRepository extends Command
     public function formatOfContent($contractName, $RepositoryName, $baseName)
     {
 
-return
-"<?php
+        return
+        "<?php
 
 namespace App\Repositories;
 

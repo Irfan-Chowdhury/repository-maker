@@ -3,7 +3,6 @@
 namespace Irfan\RepositoryMaker\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
 use Irfan\RepositoryMaker\Facades\Utility;
 
 class MakeService extends Command
@@ -22,10 +21,9 @@ class MakeService extends Command
      */
     protected $description = 'Created a new service class';
 
-
     public function handle()
     {
-        Utility::directoryManage($directory='Services');
+        Utility::directoryManage($directory = 'Services');
 
         $name = $this->argument('name');
         $serviceContent =
@@ -35,6 +33,7 @@ class MakeService extends Command
 
         if (file_exists($filePath)) {
             $this->error("Service {$name} already exists!");
+
             return;
         }
 

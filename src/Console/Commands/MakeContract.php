@@ -3,7 +3,6 @@
 namespace Irfan\RepositoryMaker\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
 use Irfan\RepositoryMaker\Facades\Utility;
 
 class MakeContract extends Command
@@ -17,7 +16,7 @@ class MakeContract extends Command
      */
     public function handle()
     {
-        Utility::directoryManage($directory='Contracts');
+        Utility::directoryManage($directory = 'Contracts');
 
         $name = $this->argument('name');
         $contractContent = $this->formatOfContent($name);
@@ -26,6 +25,7 @@ class MakeContract extends Command
 
         if (file_exists($filePath)) {
             $this->error("Contract {$name} already exists!");
+
             return;
         }
 
@@ -33,7 +33,6 @@ class MakeContract extends Command
 
         $this->info("Contract [app/Contracts/{$name}.php] created successfully!");
     }
-
 
     private function formatOfContent($name)
     {
