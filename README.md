@@ -167,5 +167,7 @@ public function index()
 ```
 
 ## Credits
-- [spatie/package-skeleton-laravel](https://github.com/spatie/package-skeleton-laravel)
+- Inspired by [Abdullah Al Zuhair](https://github.com/zuhair2025)
+- Learning from - [Bitfumes](https://www.youtube.com/@Bitfumes) and [Maniruzzaman Akash](https://www.youtube.com/@Maniruzzaman)
+- Structure follow from - [spatie/package-skeleton-laravel](https://github.com/spatie/package-skeleton-laravel)
  
