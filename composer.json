@@ -1,6 +1,6 @@
 {
     "name": "irfan-chowdhury/repository-maker",
-    "description": "This package will create your necessary files for repository design pattern environment.",
+    "description": "This package will generate the necessary files for the repository design pattern environment.",
     "keywords": [
         "repository",
         "repository-design-pattern",

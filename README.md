@@ -165,3 +165,7 @@ public function index()
     return $userContract->latest()->first();
 }
 ```
+
+## Credits
+- [spatie/package-skeleton-laravel](https://github.com/spatie/package-skeleton-laravel)
+ 
