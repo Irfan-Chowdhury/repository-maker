@@ -166,6 +166,9 @@ public function index()
 }
 ```
 
+## Visit
+Packagist : https://packagist.org/packages/irfan-chowdhury/repository-maker
+
 ## Credits
 - Inspired by [Abdullah Al Zuhair](https://github.com/zuhair2025)
 - Learning from - [Bitfumes](https://www.youtube.com/@Bitfumes) and [Maniruzzaman Akash](https://www.youtube.com/@Maniruzzaman)
