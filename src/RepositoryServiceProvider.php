@@ -2,6 +2,8 @@
 
 namespace Irfan\RepositoryMaker;
 
+use App\Console\Commands\MakeRepositoryWithInterface;
+use App\Console\Commands\MakeRepositoryWithInterfaceAndService;
 use Illuminate\Support\ServiceProvider;
 use Irfan\RepositoryMaker\Console\Commands\MakeBaseContract;
 use Irfan\RepositoryMaker\Console\Commands\MakeBaseRepository;
@@ -27,9 +29,11 @@ class RepositoryServiceProvider extends ServiceProvider
                 MakeBaseContract::class,
                 MakeExtendedContract::class,
                 MakeRepository::class,
+                MakeRepositoryWithInterface::class,
                 MakeBaseRepository::class,
                 MakeExtendedRepository::class,
                 MakeService::class,
+                MakeRepositoryWithInterfaceAndService::class
             ]);
         }
     }

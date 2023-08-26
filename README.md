@@ -45,9 +45,11 @@ If you now run `php artisan` you will see some new commands in the list:
 - `make:contract-base`
 - `make:contract-extends`
 - `make:repository`
+- `make:repository-i`
 - `make:repository-base`
 - `make:repository-extends`
 - `make:service`
+- `make:repository-i-s`
 
 ### Commands
 ```bash
@@ -55,9 +57,11 @@ $ php artisan make:contract NameContract
 $ php artisan make:contract-base
 $ php artisan make:contract-extends NameContract
 $ php artisan make:repository NameRepository
+$ php artisan make:repository-i NameRepository
 $ php artisan make:repository-base
 $ php artisan make:repository-extends NameRepository
 $ php artisan make:service NameService
+$ php artisan make:repository-i-s NameRepository
 ```
 
 ### Note: 
@@ -112,6 +116,12 @@ It will generate a repository class according to this path `app/Repositories/Use
 $ php artisan make:repository UserRepository
 ```
 
+### Creating Repository with interface
+It will generate a repository class with interface according to this path `app/Repositories/UserRepository.php` and `app/Contracts/UserContract.php`. 
+```bash
+$ php artisan make:repository-i UserRepository
+```
+
 ### Creating a Base Repository 
 It is optional but if you want to use a base, it will generate a repository class according to this path `app/Repositories/BaseRepository.php`.
 
@@ -134,6 +144,12 @@ It is optional but sometimes we need to use a service class to maintain business
 
 ```bash
 $ php artisan make:service UserService
+```
+
+### Creating Repository with interface and service
+It will generate a repository class with interface and service according to this path `app/Repositories/UserRepository.php`, `app/Contracts/UserContract.php`, `app/Services/UserService.php`. 
+```bash
+$ php artisan make:repository-i-s UserRepository
 ```
 
 <br>
