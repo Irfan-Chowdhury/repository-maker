@@ -2,9 +2,10 @@
 
 namespace Irfan\RepositoryMaker;
 
-use App\Console\Commands\MakeRepositoryWithInterface;
-use App\Console\Commands\MakeRepositoryWithInterfaceAndService;
 use Illuminate\Support\ServiceProvider;
+
+use Irfan\RepositoryMaker\Console\Commands\MakeRepositoryWithInterface;
+use Irfan\RepositoryMaker\Console\Commands\MakeRepositoryWithInterfaceAndService;
 use Irfan\RepositoryMaker\Console\Commands\MakeBaseContract;
 use Irfan\RepositoryMaker\Console\Commands\MakeBaseRepository;
 use Irfan\RepositoryMaker\Console\Commands\MakeContract;

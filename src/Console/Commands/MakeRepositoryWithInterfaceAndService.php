@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Irfan\RepositoryMaker\Console\Commands;
 
 use Illuminate\Console\Command;
 
